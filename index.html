@@ -10,28 +10,32 @@
 <body>
     <div class="container">
         <div id="output">
-            <div id="output1">125+15</div>
-            <div id="output2">125</div>
+            <div class="output-top">
+                <div data-previous-operand id="output1-t"></div>
+                <span></span>
+                <div data-previous-operand id="output1-b"></div>
+            </div>
+            <div data-current-operand id="output2"></div>
         </div>
         <div id="body">
-            <h3 style="grid-column: 1/3;">AC</h3>
-            <h3>DEL</h3>
-            <h3>÷</h3>
-            <h3>7</h3>
-            <h3>8</h3>
-            <h3>9</h3>
-            <h3>*</h3>
-            <h3>4</h3>
-            <h3>5</h3>
-            <h3>6</h3>
-            <h3>-</h3>
-            <h3>1</h3>
-            <h3>2</h3>
-            <h3>3</h3>
-            <h3>+</h3>
-            <h3>0</h3>
-            <h3>.</h3>
-            <h3 style="grid-column: 3/5;">=</h3>
+            <h3 data-all-claer style="grid-column: 1/3;">AC</h3>
+            <h3 data-delete>DEL</h3>
+            <h3 data-operation>÷</h3>
+            <h3 data-number>7</h3>
+            <h3 data-number>8</h3>
+            <h3 data-number>9</h3>
+            <h3 data-operation>×</h3>
+            <h3 data-number>4</h3>
+            <h3 data-number>5</h3>
+            <h3 data-number>6</h3>
+            <h3 data-operation>-</h3>
+            <h3 data-number>1</h3>
+            <h3 data-number>2</h3>
+            <h3 data-number>3</h3>
+            <h3 data-operation>+</h3>
+            <h3 data-number>0</h3>
+            <h3 data-number>.</h3>
+            <h3 data-equals id="calc" style="grid-column: 3/5;">=</h3>
         </div>
     </div>
     <script src="./aplication.js"></script>
